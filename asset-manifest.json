@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/hashkumar/Selling-website.git/static/css/main.0055e744.chunk.css",
+    "main.js": "/hashkumar/Selling-website.git/static/js/main.ec4ee20a.chunk.js",
+    "main.js.map": "/hashkumar/Selling-website.git/static/js/main.ec4ee20a.chunk.js.map",
+    "runtime-main.js": "/hashkumar/Selling-website.git/static/js/runtime-main.30538802.js",
+    "runtime-main.js.map": "/hashkumar/Selling-website.git/static/js/runtime-main.30538802.js.map",
+    "static/css/2.0a9ec390.chunk.css": "/hashkumar/Selling-website.git/static/css/2.0a9ec390.chunk.css",
+    "static/js/2.2fe21fde.chunk.js": "/hashkumar/Selling-website.git/static/js/2.2fe21fde.chunk.js",
+    "static/js/2.2fe21fde.chunk.js.map": "/hashkumar/Selling-website.git/static/js/2.2fe21fde.chunk.js.map",
+    "static/js/3.11696015.chunk.js": "/hashkumar/Selling-website.git/static/js/3.11696015.chunk.js",
+    "static/js/3.11696015.chunk.js.map": "/hashkumar/Selling-website.git/static/js/3.11696015.chunk.js.map",
+    "index.html": "/hashkumar/Selling-website.git/index.html",
+    "static/css/2.0a9ec390.chunk.css.map": "/hashkumar/Selling-website.git/static/css/2.0a9ec390.chunk.css.map",
+    "static/css/main.0055e744.chunk.css.map": "/hashkumar/Selling-website.git/static/css/main.0055e744.chunk.css.map",
+    "static/js/2.2fe21fde.chunk.js.LICENSE.txt": "/hashkumar/Selling-website.git/static/js/2.2fe21fde.chunk.js.LICENSE.txt",
+    "static/media/1.0151551d.jpg": "/hashkumar/Selling-website.git/static/media/1.0151551d.jpg",
+    "static/media/2.5e585bc1.jpg": "/hashkumar/Selling-website.git/static/media/2.5e585bc1.jpg",
+    "static/media/3.692c8ad9.jpg": "/hashkumar/Selling-website.git/static/media/3.692c8ad9.jpg",
+    "static/media/4.77ebcb43.jpg": "/hashkumar/Selling-website.git/static/media/4.77ebcb43.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.30538802.js",
+    "static/css/2.0a9ec390.chunk.css",
+    "static/js/2.2fe21fde.chunk.js",
+    "static/css/main.0055e744.chunk.css",
+    "static/js/main.ec4ee20a.chunk.js"
+  ]
+}
