@@ -13,6 +13,7 @@ import image1 from "../images/1.jpg";
 import image2 from "../images/2.jpg";
 import image3 from "../images/3.jpg";
 import image4 from "../images/4.jpg";
+import "../App.css";
 
 
 
@@ -69,7 +70,7 @@ const Map = () => {
         {images.map((step, index) => (
           <div key={step.label}>
             {Math.abs(activeStep - index) <= 2 ? (
-              <Box
+              <Box className="Slider"
                 component="img"
                 sx={{
                   height: 550,
