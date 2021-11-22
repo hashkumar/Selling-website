@@ -76,8 +76,9 @@ export default function RecipeReviewCard() {
           if you like.
         </Typography>
       
+        <NavLink to="/Selling-website/Watch">
         <button  className="btn btn-gradient btn-primary" style={{margin: "10px 0px" , width: "100px"}}>Watch Now!</button>
-          
+        </NavLink>
       </CardContent>
     
     </Card>
