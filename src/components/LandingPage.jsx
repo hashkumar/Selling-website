@@ -1,34 +1,19 @@
-import React, { useState } from "react";
+import React,{ useState } from "react";
 import Home from "./Home";
 import Map from "./Map";
 import '../App.css';
-import Card from "./Cards"
 import Portion from "./Portion";
 import image4 from "../images/4.jpg";
 import Footer from "./Footer";
 import { Box } from "@mui/material";
+import Cards from './Cards';
 
-function LandingPage() {
 
-  const data = [
-    { name: "ehllo", },
-    { name: "ehllo", },
-    { name: "ehllo", },
-    { name: "ehllo", },
-    { name: "ehllo", },
-    { name: "ehllo", },
-  ]
-
-  const data1 = [
-    { name: "ehllo", },
-    { name: "ehllo", },
-    { name: "ehllo", },
-    { name: "ehllo", },
-    { name: "ehllo", },
-    { name: "ehllo", },
-  ]
+export default function LandingPage() {
+  
 
   const [state, setState] = useState(false);
+  
 
   const Click = () => {
     setState(!state);
@@ -39,7 +24,7 @@ function LandingPage() {
 
 
       {state == false ? (<Box className='bg-dark' style={{ color: "white" }} >
-      <button onClick={Click} className="btn bg-dark" style={{ color: "white",width:"100px",height: "64px", float: 'right'}}>Dark Mode</button>
+      <button onClick={Click} className="btn Theme-x bg-dark" style={{ color: "white",width:"100px", float: 'right'}}>Dark Mode</button>
         <Home />
         <Map />
         <Portion />
@@ -57,28 +42,11 @@ function LandingPage() {
             <p style={{ textAlign: "center", margin: "10px" }}><b>Neel Hero</b></p>
           </div>
         </section>
-
-        <h1 className="Grab" style={{ width: "85%", margin: "auto" }}>Grab the deals</h1>
-        <div style={{ display: "flex", flexWrap: "wrap", width: "100%", justifyContent: 'center' }}>
-          {data.map(() => {
-            return (
-              <Card />
-            )
-          })}
-        </div>
-        <h1 className="Products" style={{ width: "85%", margin: "auto" }}>Products</h1>
-        <div style={{ display: "flex", flexWrap: "wrap", width: "100%", justifyContent: 'center' }}>
-          {data1.map(() => {
-            return (
-              <Card />
-            )
-          })}
-        </div>
+        <Cards />
         <Footer />
       </Box>) : <Box>
-
         
-      <button onClick={Click} className="btn bg-primary" style={{ color: "white",width:"100px",height: "64px", float: 'right'}}>Light Mode</button>
+      <button onClick={Click} className="btn Theme-x btn-primary" style={{ color: "white",width:"100px", float: 'right'}}>Light Mode</button>
         <Home />
         <Map />
         <Portion />
@@ -97,22 +65,8 @@ function LandingPage() {
           </div>
         </section>
 
-        <h1 className="Grab" style={{ width: "85%", margin: "auto" }}>Grab the deals</h1>
-        <div style={{ display: "flex", flexWrap: "wrap", width: "100%", justifyContent: 'center' }}>
-          {data.map(() => {
-            return (
-              <Card />
-            )
-          })}
-        </div>
-        <h1 className="Products" style={{ width: "85%", margin: "auto" }}>Products</h1>
-        <div style={{ display: "flex", flexWrap: "wrap", width: "100%", justifyContent: 'center' }}>
-          {data1.map(() => {
-            return (
-              <Card />
-            )
-          })}
-        </div>
+     
+        <Cards />
         <Footer />
       </Box> }
     </>
@@ -121,4 +75,3 @@ function LandingPage() {
 }
 
 
-export default LandingPage

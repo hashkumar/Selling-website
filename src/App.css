@@ -4,6 +4,10 @@
   padding: 0; 
 }
 
+.Theme-x{
+ height: 64px;
+ }
+
 @media only screen and (max-width: 900px){ 
 
 .portion{
@@ -28,6 +32,7 @@
     justify-content: center;
     margin: 20px auto;
   }
+
 
   .picture{
     width: 90%;
@@ -56,5 +61,19 @@
   .Slider{
     max-height: 300px;
   }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .Theme-x{
+    height: 48px;
+    }
+
+}
+
+@media only screen and (max-width: 290px) {
+  .Theme-x{
+    height: 56px;
+    }
 
 }

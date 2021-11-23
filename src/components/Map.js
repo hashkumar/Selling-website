@@ -85,17 +85,18 @@ const Map = () => {
           </div>
         ))}
       </AutoPlaySwipeableViews>
+   
       <MobileStepper
         steps={maxSteps}
         position="static"
         activeStep={activeStep}
         nextButton={
           <Button
-            size="small"
-            onClick={handleNext}
-            disabled={activeStep === maxSteps - 1}
-          >
-   
+          size="small"
+          onClick={handleNext}
+          disabled={activeStep === maxSteps - 1}
+        >    
+     
             {theme.direction === 'rtl' ? (
               <KeyboardArrowLeft />
             ) : (

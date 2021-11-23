@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React,{ useState } from 'react';
 import { styled, alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -11,10 +11,16 @@ import Stack from '@mui/material/Stack';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 
-function Home() {
+
+function Home(props) {
+ 
+ 
+
+  
 
   function appBarLabel(label) {
     return (
+     
       <Toolbar>
         <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
           <MenuIcon />
@@ -22,6 +28,8 @@ function Home() {
         <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1 }}>
           {label}
         </Typography>
+
+       
       </Toolbar>
     );
   }
@@ -41,12 +49,13 @@ function Home() {
 
    <>
  
- <Stack spacing={2} sx={{ flexGrow: 1 }}>
+    
+     <Stack spacing={2} sx={{ flexGrow: 1 }}>
       <ThemeProvider theme={darkTheme}>
         <AppBar position="static" color="primary">
           {appBarLabel('Logo')}
         </AppBar>
-      </ThemeProvider>
+      </ThemeProvider> 
     </Stack>
     
     </>
