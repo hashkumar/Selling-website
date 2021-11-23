@@ -6,7 +6,7 @@
 
   .Theme-x{
     float: right;
-    position: absolute;
+    position: fixed;
     top: 3.5%;
     right: 2%;
     color: white;  
@@ -23,7 +23,7 @@
 
     .Theme-y{
       float: right;
-      position: absolute;
+      position: fixed;
       top: 3.5%;
       right: 2%;
       color: white;  
