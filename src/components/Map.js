@@ -86,12 +86,22 @@ const Map = () => {
         ))}
       </AutoPlaySwipeableViews>
    
-      <MobileStepper
-        steps={maxSteps}
-        position="static"
-        activeStep={activeStep}
-        nextButton={
+          <div style={{width:"100%", display: "flex",justifyContent:"space-between"}}>
+    
+
+          <Button size="small" onClick={handleBack}
+          style={{marginTop:"-200px"}} 
+          disabled={activeStep === 0}>
+            {theme.direction === 'rtl' ? (
+              <KeyboardArrowRight />
+            ) : (
+              <KeyboardArrowLeft />
+            )}
+      
+          </Button>
+
           <Button
+         style={{marginTop:"-200px"}} 
           size="small"
           onClick={handleNext}
           disabled={activeStep === maxSteps - 1}
@@ -103,18 +113,8 @@ const Map = () => {
               <KeyboardArrowRight />
             )}
           </Button>
-        }
-        backButton={
-          <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
-            {theme.direction === 'rtl' ? (
-              <KeyboardArrowRight />
-            ) : (
-              <KeyboardArrowLeft />
-            )}
-      
-          </Button>
-        }
-      />
+          </div>
+
     </Box>
       
     )      

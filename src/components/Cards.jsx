@@ -68,8 +68,10 @@ const ExpandMore = styled((props) => {
 
   return (
     <>
-       <div style={{display:"flex", width:"85%", margin:"auto"}}>
+       <div className="Grabbox" style={{display:"flex", width:"85%", margin:"auto"}}>
+         
       <h1 className="Grab" style={{ width: "85%", margin: "auto" }}>Grab the deals</h1>
+
       <input 
       className="form-control rounded"
         type='search'

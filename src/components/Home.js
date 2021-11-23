@@ -12,10 +12,7 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 
 
-function Home(props) {
- 
- 
-
+function Home() {
   
 
   function appBarLabel(label) {
@@ -29,7 +26,6 @@ function Home(props) {
           {label}
         </Typography>
 
-       
       </Toolbar>
     );
   }

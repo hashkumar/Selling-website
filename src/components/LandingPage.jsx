@@ -10,7 +10,7 @@ import Cards from './Cards';
 
 
 export default function LandingPage() {
-  
+ 
 
   const [state, setState] = useState(false);
   
@@ -24,8 +24,8 @@ export default function LandingPage() {
 
 
       {state == false ? (<Box className='bg-dark' style={{ color: "white" }} >
-      <button onClick={Click} className="btn Theme-x bg-dark" style={{ color: "white",width:"100px", float: 'right'}}>Dark Mode</button>
-        <Home />
+      <p onClick={Click} className="Theme-x bg-dark" >Dark Mode</p>
+        <Home className="Home"/>
         <Map />
         <Portion />
         <section className="portion2" style={{ height: "max-content", display: "flex", width: "40%", margin: "100px auto", justifyContent: "space-between" }}>
@@ -46,7 +46,7 @@ export default function LandingPage() {
         <Footer />
       </Box>) : <Box>
         
-      <button onClick={Click} className="btn Theme-x btn-primary" style={{ color: "white",width:"100px", float: 'right'}}>Light Mode</button>
+      <p onClick={Click} className="Theme-y bg-dark" >Lite Mode</p>
         <Home />
         <Map />
         <Portion />
