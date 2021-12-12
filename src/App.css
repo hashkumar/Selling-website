@@ -4,6 +4,9 @@
   padding: 0; 
 }
 
+  .form-control{
+    margin: 20px auto;
+  }
 
   .Theme-x{
     padding: 5px;
@@ -40,6 +43,7 @@
     .picture{
       max-width: 300px;
       background-position: cover;
+      margin: 20px;
     }
 
     .boxesF1{
@@ -91,7 +95,7 @@
 
 
   .picture{
-    width: 90%;
+    max-width: fit-content;
     height: 100%;
     border-radius: 0;
   }
@@ -122,10 +126,9 @@
 
 @media only screen and (max-width: 600px){
 
-
-  .picture{
-    width: 400px;
-    background-position: cover;
+  .boxF{
+  display: flex;
+  flex-direction: column;
   }
 
 
@@ -138,10 +141,10 @@ max-width: fit-content;
 text-align: center;
 }
 
-.form-control{
-  max-width: 250px;
-  margin: 20px auto ;
-}
+  .form-control{
+  max-width: 88%;
+  margin: auto ;
+}  
 
 .Grabbox{
  max-width: 80%;

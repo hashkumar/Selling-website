@@ -45,14 +45,14 @@ const Footer = () =>{
              <h2 style={{textAlign: "center", padding: "20px"}}>Get Connected with us today!</h2>
            
              <div className="boxF" style={{display: "flex", margin: "20px 6%" , justifyContent: "center"}}>
-             <input className="form-control w-25" style={{margin: "20px 0px"}}type="text" placeholder="Enter your email"/>
+             <input className="form-control" type="text" placeholder="Enter your email"/>
              <button className= "btn btn-danger w-80 RegisterNow" style={{margin : "20px 20px"}}>Register Now!</button>
         </div>
 
         <div className="boxesF1" style={{ width: "100%"}}>
        {Dashboard.map((value,index) => {
            return(
-               <div className="boxesF" key={index} >
+               <div className="boxesF" key={index} style={{margin: "50px auto"}}>
                    <h4 style={{margin: "20px auto"}}><b>{value.Name}</b></h4>
                    <p href="#">{value.address}</p>
                    <p href="#">{value.gmail}</p>
