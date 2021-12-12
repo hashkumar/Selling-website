@@ -10,10 +10,11 @@ import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
 import image1 from "../images/1.jpg";
-import image2 from "../images/2.jpg";
-import image3 from "../images/3.jpg";
-import image4 from "../images/4.jpg";
+import image2 from "../images/2.webp";
+import image3 from "../images/3.webp";
+import image4 from "../images/4.webp";
 import "../App.css";
+import zIndex from '@mui/material/styles/zIndex';
 
 
 
@@ -59,38 +60,19 @@ const Map = () => {
   
     return (
    
-   <Box sx={{maxWidth: '100%', margin: "0px auto" , flexGrow: 1 }}>
+   <Box sx={{maxWidth: '100%', flexGrow: 1 ,position: 'relative'}}>
      
-      <AutoPlaySwipeableViews
-        axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
-        index={activeStep}
-        onChangeIndex={handleStepChange}
-        enableMouseEvents
-      >
-        {images.map((step, index) => (
-          <div key={step.label}>
-            {Math.abs(activeStep - index) <= 2 ? (
-              <Box className="Slider"
-                component="img"
-                sx={{
-                  height: 550,
-                  display: 'block',
-                  overflow: 'hidden',
-                  width: '100%',
-                }}
-                src={step.imgPath}
-                alt={step.label}
-              />
-            ) : null}
-          </div>
-        ))}
-      </AutoPlaySwipeableViews>
-   
-          <div style={{width:"100%", display: "flex",justifyContent:"space-between"}}>
-    
-
-          <Button size="small" onClick={handleBack}
-          style={{marginTop:"-200px"}} 
+     <div  style={{display: "flex"}}>
+     <Button size="small" onClick={handleBack}
+          style={{
+        minHeight: "60px",
+        minWidth: "60px",
+        borderRadius: "50%",
+        position: "absolute",
+        top: "50%",
+        zIndex: "1"
+        // display: "none"
+        }} 
           disabled={activeStep === 0}>
             {theme.direction === 'rtl' ? (
               <KeyboardArrowRight />
@@ -100,8 +82,45 @@ const Map = () => {
       
           </Button>
 
+      <AutoPlaySwipeableViews
+        axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
+        index={activeStep}
+        onChangeIndex={handleStepChange}
+        enableMouseEvents
+      > 
+      
+     
+
+        {images.map((step, index) => (
+          <div key={step.label}>
+            {Math.abs(activeStep - index) <= 2 ? (
+              <Box className="Slider"
+                component="img"
+                sx={{
+                  height: 500,
+                  // backGroundSize: '300px 200px',
+                  minWidth: '100%',
+                  objectFit: 'cover',
+                }}
+                src={step.imgPath}
+                alt={step.label}
+              />
+            ) : null}
+          </div>
+        ))}
+      </AutoPlaySwipeableViews>
+          
+
           <Button
-         style={{marginTop:"-200px"}} 
+          style={{
+            minHeight: "60px",
+            minWidth: "60px",
+            borderRadius: "50%",
+            position: "absolute",
+            top: "50%",
+            right: "0%",
+            zIndex: "1"
+            }} 
           size="small"
           onClick={handleNext}
           disabled={activeStep === maxSteps - 1}
@@ -113,7 +132,7 @@ const Map = () => {
               <KeyboardArrowRight />
             )}
           </Button>
-          </div>
+         </div>
 
     </Box>
       

@@ -1,5 +1,5 @@
 import React from "react";
-import image4 from "../images/4.jpg";
+import image4 from "../images/3.webp";
 import "./Watch.css";
 import ReactPlayer from "react-player";
 
