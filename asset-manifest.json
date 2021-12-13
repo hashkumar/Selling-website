@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Selling-website/static/css/main.2f3b89c6.chunk.css",
+    "main.css": "/Selling-website/static/css/main.c9d926bb.chunk.css",
     "main.js": "/Selling-website/static/js/main.f2d4f7e6.chunk.js",
     "main.js.map": "/Selling-website/static/js/main.f2d4f7e6.chunk.js.map",
     "runtime-main.js": "/Selling-website/static/js/runtime-main.a3af4d36.js",
@@ -12,7 +12,7 @@
     "static/js/3.644137a2.chunk.js.map": "/Selling-website/static/js/3.644137a2.chunk.js.map",
     "index.html": "/Selling-website/index.html",
     "static/css/2.047300a4.chunk.css.map": "/Selling-website/static/css/2.047300a4.chunk.css.map",
-    "static/css/main.2f3b89c6.chunk.css.map": "/Selling-website/static/css/main.2f3b89c6.chunk.css.map",
+    "static/css/main.c9d926bb.chunk.css.map": "/Selling-website/static/css/main.c9d926bb.chunk.css.map",
     "static/js/2.9e105972.chunk.js.LICENSE.txt": "/Selling-website/static/js/2.9e105972.chunk.js.LICENSE.txt",
     "static/media/1.2300c071.jpg": "/Selling-website/static/media/1.2300c071.jpg",
     "static/media/2.ed5dbcd9.webp": "/Selling-website/static/media/2.ed5dbcd9.webp",
@@ -23,7 +23,7 @@
     "static/js/runtime-main.a3af4d36.js",
     "static/css/2.047300a4.chunk.css",
     "static/js/2.9e105972.chunk.js",
-    "static/css/main.2f3b89c6.chunk.css",
+    "static/css/main.c9d926bb.chunk.css",
     "static/js/main.f2d4f7e6.chunk.js"
   ]
 }
