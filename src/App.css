@@ -164,7 +164,7 @@ text-align: center;
   .picture{
    margin: 20px auto;
    width: 60vh;
-   max-height: 40%;
+   max-height: 100px;
   }
 
   .paragraph{
