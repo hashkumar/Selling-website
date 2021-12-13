@@ -17,7 +17,7 @@ return(
  
     <section className="portion" data-aos="zoom-in"   data-aos-delay="50" style={{ height: "max-content", display: "flex",justifyContent: "space-between", margin: "100px auto", width: "75%"}}>
      <img src={image4} className="picture" style={{borderRadius:"5px" }}/>
-     <p style={{fontSize: "15px",  fontStyle: "arial", alignItems:"center",Width: "40rem", margin: "auto" }} className="paragraph" >
+     <p style={{  fontStyle: "arial", alignItems:"center",Width: "40rem", margin: "auto" }} className="paragraph" >
             Heat oil in a (14- to 16-inch) paella pan or a large, deep skillet over
             medium-high heat. Add chicken, shrimp and chorizo, and cook, stirring
           medium-high heat. Add chicken, shrimp and chorizo, and cook, stirring
@@ -32,7 +32,7 @@ return(
    </section>
    
    <section className="fix-box"  data-aos="zoom-in"   data-aos-delay="50"   id="fix-box1" style={{height: "max-content", display: "flex",justifyContent: "space-between", margin: "100px auto", width: "75%"}}>
-   <p style={{fontSize: "15px",  fontStyle: "arial", alignItems:"center",Width: "40rem", margin: "auto" }} className="paragraph" >
+   <p style={{  fontStyle: "arial", alignItems:"center",Width: "40rem", margin: "auto" }} className="paragraph" >
             Heat oil in a (14- to 16-inch) paella pan or a large, deep skillet over
             medium-high heat. Add chicken, shrimp and chorizo, and cook, stirring
           medium-high heat. Add chicken, shrimp and chorizo, and cook, stirring
@@ -50,7 +50,7 @@ return(
 
    <section className="portion"   data-aos="zoom-in"    data-aos-delay="50" style={{height: "max-content", display: "flex",justifyContent: "space-between", margin: "100px auto", width: "75%"}}>
    <img src={image4} className="picture" style={{borderRadius:"5px" }}/>
-   <p style={{fontSize: "15px",  fontStyle: "arial", alignItems:"center",Width: "40rem", margin: "auto" }} className="paragraph" >
+   <p style={{  fontStyle: "arial", alignItems:"center",Width: "40rem", margin: "auto" }} className="paragraph" >
             Heat oil in a (14- to 16-inch) paella pan or a large, deep skillet over
             medium-high heat. Add chicken, shrimp and chorizo, and cook, stirring
           medium-high heat. Add chicken, shrimp and chorizo, and cook, stirring

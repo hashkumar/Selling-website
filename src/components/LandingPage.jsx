@@ -28,7 +28,7 @@ const LandingPage = () => {
       {state == false ? (<Box className='bg-dark' style={{ color: "white" }} >
       <p onClick={Click} className="Theme-x bg-dark" >Dark Mode</p>
         <Home className="Home"/>
-
+      
         <Map />
         <Portion />
     
@@ -38,12 +38,10 @@ const LandingPage = () => {
         
       <p onClick={Click} className="Theme-y bg-dark" >Lite Mode</p>
         <Home />
+     
         <Map />
         <Portion />
         <Cards />
-
-
-
         <Footer />
       </Box> }
 
