@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/Selling-website/static/css/main.843982c9.chunk.css",
-    "main.js": "/Selling-website/static/js/main.26daaa99.chunk.js",
-    "main.js.map": "/Selling-website/static/js/main.26daaa99.chunk.js.map",
-    "runtime-main.js": "/Selling-website/static/js/runtime-main.dcb0d854.js",
-    "runtime-main.js.map": "/Selling-website/static/js/runtime-main.dcb0d854.js.map",
+    "main.css": "/Selling-website/static/css/main.79ee9091.chunk.css",
+    "main.js": "/Selling-website/static/js/main.f2d4f7e6.chunk.js",
+    "main.js.map": "/Selling-website/static/js/main.f2d4f7e6.chunk.js.map",
+    "runtime-main.js": "/Selling-website/static/js/runtime-main.a3af4d36.js",
+    "runtime-main.js.map": "/Selling-website/static/js/runtime-main.a3af4d36.js.map",
     "static/css/2.047300a4.chunk.css": "/Selling-website/static/css/2.047300a4.chunk.css",
-    "static/js/2.42242edf.chunk.js": "/Selling-website/static/js/2.42242edf.chunk.js",
-    "static/js/2.42242edf.chunk.js.map": "/Selling-website/static/js/2.42242edf.chunk.js.map",
-    "static/js/3.37f3f21d.chunk.js": "/Selling-website/static/js/3.37f3f21d.chunk.js",
-    "static/js/3.37f3f21d.chunk.js.map": "/Selling-website/static/js/3.37f3f21d.chunk.js.map",
+    "static/js/2.9e105972.chunk.js": "/Selling-website/static/js/2.9e105972.chunk.js",
+    "static/js/2.9e105972.chunk.js.map": "/Selling-website/static/js/2.9e105972.chunk.js.map",
+    "static/js/3.644137a2.chunk.js": "/Selling-website/static/js/3.644137a2.chunk.js",
+    "static/js/3.644137a2.chunk.js.map": "/Selling-website/static/js/3.644137a2.chunk.js.map",
     "index.html": "/Selling-website/index.html",
     "static/css/2.047300a4.chunk.css.map": "/Selling-website/static/css/2.047300a4.chunk.css.map",
-    "static/css/main.843982c9.chunk.css.map": "/Selling-website/static/css/main.843982c9.chunk.css.map",
-    "static/js/2.42242edf.chunk.js.LICENSE.txt": "/Selling-website/static/js/2.42242edf.chunk.js.LICENSE.txt",
+    "static/css/main.79ee9091.chunk.css.map": "/Selling-website/static/css/main.79ee9091.chunk.css.map",
+    "static/js/2.9e105972.chunk.js.LICENSE.txt": "/Selling-website/static/js/2.9e105972.chunk.js.LICENSE.txt",
     "static/media/1.2300c071.jpg": "/Selling-website/static/media/1.2300c071.jpg",
     "static/media/2.ed5dbcd9.webp": "/Selling-website/static/media/2.ed5dbcd9.webp",
     "static/media/3.18b38001.webp": "/Selling-website/static/media/3.18b38001.webp",
     "static/media/4.630d6493.webp": "/Selling-website/static/media/4.630d6493.webp"
   },
   "entrypoints": [
-    "static/js/runtime-main.dcb0d854.js",
+    "static/js/runtime-main.a3af4d36.js",
     "static/css/2.047300a4.chunk.css",
-    "static/js/2.42242edf.chunk.js",
-    "static/css/main.843982c9.chunk.css",
-    "static/js/main.26daaa99.chunk.js"
+    "static/js/2.9e105972.chunk.js",
+    "static/css/main.79ee9091.chunk.css",
+    "static/js/main.f2d4f7e6.chunk.js"
   ]
 }
