@@ -150,7 +150,7 @@ function Home() {
      <Stack spacing={2} sx={{ flexGrow: 1}}>
       <ThemeProvider theme={darkTheme}>
         <AppBar position="static" color="primary">
-          {appBarLabel('🔵🔴 Logo')}
+          {appBarLabel('L🔵g🔴')}
         </AppBar>
       </ThemeProvider> 
     </Stack>
