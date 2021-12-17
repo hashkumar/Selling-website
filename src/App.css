@@ -8,6 +8,15 @@
     margin: 20px auto;
   }
 
+  .button_map{
+  background-color: #1A1A1A; 
+  box-shadow:  rgba(112, 14, 240, 0.699) 0px 2px 4px 0px, rgpa(14,30,37,0.32) 0px 2px 16px 0px;
+  } 
+  
+  .button_map:hover{
+    background-color: rgba(20, 3, 43, 0.699);
+  }
+
   .Theme-x{
     padding: 5px;
     float: right;
@@ -64,7 +73,90 @@
       margin: 0px 10px;
       }
 
+      .slider_box1{
+        min-width: 100%;
+        min-height: 450px;
+        display: flex;
+        flex-direction: column;
+        padding: 10%;
+        background-color: rgba(0,0,0,0.5);
+      } 
+
+      .slider_box21{
+        background-color: rgba(0,0,0,0.5);
+        margin-left: 0rem;
+        min-width: 100%;
+      text-align: center;
+      min-height: 450px;
+      display: flex;
+      justify-content: space-around;
+      padding: 10%;
+      flex-direction: column;
+      /* margin-left: -22.9rem; */
+      transition: all ease-out 0.5s;
+      z-index: 1;
+      }
+    
+      .slider_box2{
+      background-color: rgba(25, 4, 59, 0.726);
+      border-radius: 5px;
+      min-width:100%;
+      margin-left: -100%;
+      text-align: center;
+      min-height: 450px;
+      display: flex;
+      justify-content: space-around;
+      padding: 10%;
+      flex-direction: column;
+    
+      transition: all ease-out 0.5s;
+      z-index: 1;
+      }
+
 @media only screen and (max-width: 900px){ 
+
+  .slider_box1{
+    min-width:100%;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+  } 
+
+  .slider_box21{
+    display: none;
+    /* margin-left: 0rem;
+    min-width:100%;
+  text-align: center;
+  min-height: 450px;
+  display: flex;
+  justify-content: space-around;
+  padding: 10%;
+  flex-direction: column;
+  /* margin-left: -22.9rem; */
+  /* transition: all ease-out 0.5s;
+  z-index: 1; */
+  }
+
+  .slider_box2{
+   min-width: 100%;
+   text-align: center;
+   min-height: 450px;
+   display: flex;
+   justify-content: space-around;
+   padding: 10%;
+   flex-direction: column;
+   margin-left: -100%;
+   transition: all ease-out 0.5s;
+   z-index: 1; 
+   }
+
+  
+
+.card_map{
+ display: flex;
+ justify-content: center;
+} 
 
 .portion{
    display: flex;
@@ -92,6 +184,8 @@
     justify-content: center;
     margin: 20px auto;
   }
+
+
 
 
   /* .picture{
@@ -173,6 +267,9 @@ text-align: center;
     font-size: 0.7rem;
     text-align: start;
   }
+
+ 
+
 
 } 
 

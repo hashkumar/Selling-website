@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import "../App.css";
 
 const Footer = () =>{
@@ -46,8 +46,9 @@ const Footer = () =>{
            
              <div className="boxF" style={{display: "flex", margin: "20px 6%" , justifyContent: "center"}}>
              <input className="form-control" type="text" placeholder="Enter your email"/>
-             <button className= "btn btn-danger w-80 RegisterNow" style={{margin : "20px 20px"}}>Register Now!</button>
-        </div>
+             <button  className= "btn btn-danger w-80 RegisterNow" style={{margin : "20px 20px"}}>Register Now!</button>
+
+        </div>         
 
         <div className="boxesF1" style={{ width: "100%"}}>
        {Dashboard.map((value,index) => {
@@ -65,7 +66,7 @@ const Footer = () =>{
        })
 
        }</div>
-
+      
      </section>
     )
 }
