@@ -3,6 +3,13 @@
   margin: 0;
   padding: 0; 
 }
+  
+.BoxSlider{
+max-width: 60%;
+position: relative;
+top:5%;
+left: 38%;
+}
 
   .form-control{
     margin: 20px auto;
@@ -30,14 +37,12 @@
     .Theme-x:hover{
     border: 2px solid white;
     padding: 5px;
-  
     }
     
     .Theme-y:hover{
       border: 2px solid greenyellow;
       padding: 5px;
-    
-      }
+    }
 
     .Theme-y{
       padding: 5px;
@@ -48,14 +53,13 @@
       color: white;  
       z-index: 100;
     } 
-
  
 
     .boxesF1{
       display: flex;
       /* flex-direction: column; */
       justify-content: space-around;
-      margin: 100px auto;
+      margin: 0px auto;
       } 
 
        .portion{
@@ -79,41 +83,29 @@
         display: flex;
         flex-direction: column;
         padding: 10%;
-        background-color: rgba(0,0,0,0.5);
+        background-color: white;
+        color: black;
       } 
 
-      .slider_box21{
-        background-color: rgba(0,0,0,0.5);
-        margin-left: 0rem;
-        min-width: 100%;
-      text-align: center;
-      min-height: 450px;
-      display: flex;
-      justify-content: space-around;
-      padding: 10%;
-      flex-direction: column;
-      /* margin-left: -22.9rem; */
-      transition: all ease-out 0.5s;
-      z-index: 1;
-      }
-    
-      .slider_box2{
-      background-color: rgba(25, 4, 59, 0.726);
-      border-radius: 5px;
-      min-width:100%;
-      margin-left: -100%;
-      text-align: center;
-      min-height: 450px;
-      display: flex;
-      justify-content: space-around;
-      padding: 10%;
-      flex-direction: column;
-    
-      transition: all ease-out 0.5s;
-      z-index: 1;
+      .Slider{
+        min-width: 60%;
+        position: relative;
       }
 
 @media only screen and (max-width: 900px){ 
+
+
+    .BoxSlider{
+      max-width: 100%;
+      position: relative; 
+       left: 0%; 
+      }
+
+
+    .BoxSlider1{
+    display: flex;
+    flex-direction: column;
+    }
 
   .slider_box1{
     min-width:100%;
@@ -151,14 +143,13 @@
    z-index: 1; 
    }
 
-  
 
-.card_map{
- display: flex;
- justify-content: center;
-} 
+  .card_map{
+  display: flex;
+  justify-content: center; 
+  } 
 
-.portion{
+  .portion{
    display: flex;
    flex-direction: column;
    height: max-content;
@@ -195,13 +186,13 @@
   } */
 
   .paragraph{
-    min-width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    word-break: break-all;
-    margin: 0px;
-    /* text-align: center; */
-    /* padding: 10px; */
+   min-width: 90%;
+   display: flex;
+   flex-wrap: wrap;
+   word-break: break-all;
+   margin: 0px;
+  /* text-align: center; */
+  /* padding: 10px; */
   }
 
   .Products{

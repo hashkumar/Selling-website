@@ -45,9 +45,8 @@ const Footer = () =>{
              <h2 style={{textAlign: "center", padding: "20px"}}>Get Connected with us today!</h2>
            
              <div className="boxF" style={{display: "flex", margin: "20px 6%" , justifyContent: "center"}}>
-             <input className="form-control" type="text" placeholder="Enter your email"/>
-             <button  className= "btn btn-danger w-80 RegisterNow" style={{margin : "20px 20px"}}>Register Now!</button>
-
+             <input className="form-control" type="text" style={{maxHeight: "40px"}} placeholder="Enter your email"/>
+             <button  className= "btn btn-danger w-80 RegisterNow" style={{margin : "20px 20px", maxHeight: "40px", minWidth: "150px"}}>Register Now!</button>
         </div>         
 
         <div className="boxesF1" style={{ width: "100%"}}>

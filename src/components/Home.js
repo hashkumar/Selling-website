@@ -21,6 +21,10 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import { NavLink, Route } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAddressCard, faAirFreshener } from '@fortawesome/free-solid-svg-icons';
+
+
 
 
 function Home() {
@@ -81,9 +85,10 @@ function Home() {
    function appBarLabel(label,anchor) {
      return (
    
-       <Toolbar >
+       <Toolbar>
               {['right'].map((anchor) => (
           <React.Fragment key={anchor}>
+            <button className='btn btn-gradient btn-success m-2 text-white' data={"hhh"} ><FontAwesomeIcon icon={faAirFreshener} color="white" /></button>
             <Button sx={{position: "absolute", right: "10px"}} onClick={toggleDrawer(anchor, true)}>
             <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 2, }}>
          <MenuIcon />
@@ -149,10 +154,11 @@ function Home() {
    <>
  
     
-     <Stack spacing={2} sx={{ flexGrow: 1}}>
-      <ThemeProvider theme={darkTheme}>
-        <AppBar position="static" color="primary">
-          {appBarLabel('L🔵g🔴')}
+     <Stack spacing={2} sx={{ flexGrow: 1 }}>
+      <ThemeProvider theme={darkTheme} >
+        <AppBar position="fixed" color="primary" > 
+
+          {appBarLabel('Konichiwa')}
         </AppBar>
       </ThemeProvider> 
     </Stack>

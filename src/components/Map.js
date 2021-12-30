@@ -59,14 +59,11 @@ const Map = () => {
     setActiveStep(step);
   };
 
-  const [state, setState] = useState(false);
-
   return (
     <>
-
-      <Box sx={{ maxWidth: '100%', flexGrow: 1, position: 'relative' }}>
-
-        <div style={{ display: "flex" }}>
+     <div className="BoxSlider1" style={{display: "flex" }}>
+      <Box sx={{ flexGrow: 1}} className="BoxSlider">
+        <div style={{ display: "flex" , marginTop: "20px"}}>
           <Button size="small" onClick={handleBack}
             style={{
               minHeight: "60px",
@@ -94,16 +91,16 @@ const Map = () => {
           >
 
 
-
             {images.map((step, index) => (
               <div key={step.label}>
                 {Math.abs(activeStep - index) <= 2 ? (
                   <Box className="Slider"
                     component="img"
                     sx={{
-                      height: 500,
+                      height: 450,
+                      marginTop: "9.2%",
+                      width: "100%",
                       // backGroundSize: '300px 200px',
-                      minWidth: '100%',
                       objectFit: 'cover',
                     }}
                     src={step.imgPath}
@@ -125,6 +122,7 @@ const Map = () => {
               right: "0%",
               zIndex: "1"
             }}
+
             size="small"
             onClick={handleNext}
             disabled={activeStep === maxSteps - 1}
@@ -139,91 +137,83 @@ const Map = () => {
         </div>
 
       </Box>
-      <Media query="(max-width: 900px)">
+        <Media query="(max-width: 900px)">
         {matches => {
           return matches ? <Box sx={{
             position: "relative",
-            top: "12%",
             margin: "20px",
             display: "flex",
             left: "0"
           }} className='card_map'>
-            <div style={{
-              display: "flex",
-              alignItem: "center",
-              textAlignment: "center",
-              justifyContent: "space-evenly"
-            }} className="slider_box1 " >
-                   <h3>Login here</h3>
-              <label> Username  <Input type="name" style={{color: "white"}} /></label>
-              <label> Password  <Input type="name" style={{color: "white"}} /></label>
-            </div>
-            <div className={state ? "slider_box21 " : "slider_box2 "}>
-            <h1>Log In ...</h1>
-              {state ? (<div><button
-            style={{
-              borderRadius: "70% 20% 70% 20px",
-              minHeight: "100px",
-              minWidth: "100px",
-              border: "none",
-              zIndex: "1"
-            }}
-
-            className="button_map text-white"
-            onClick={() => setState(!state)}>Left</button></div>)
-            : <div><button
-              style={{
-                borderRadius: "20% 70% 20% 70px",
-                minHeight: "100px",
-                minWidth: "100px",
-                border: "none",
-                zIndex: "1"
-              }}
-              className="button_map text-white"
-              onClick={() => setState(!state)}>Right</button></div>}
-        </div>
+             <Paper style={{
+          display: "flex",
+          alignItem: "center",
+          textAlignment: "center",
+          justifyContent: "space-evenly",
+          minWidth :"100%"
+        }} className="slider_box1 " >
+          <h3 className="text-center ">Welcome Back!</h3>
+          <h5>Login here</h5>
+          <label style={{display: "flex", justifyContent: "space-between", maxWidth: "100%"}}> Username  <input type="name" style={{
+          maxWidth: "60%",
+          marginLeft: "5%"
+          }}/></label>
+          <label style={{display: "flex", justifyContent: "space-between", maxWidth: "100%"}}> Password  <input type="name" style={{
+          maxWidth: "60%",
+          marginLeft: "5%"
+          }}/></label>
+         <label style={{display: "flex", justifyContent: "space-between", maxWidth: "100%", fontSize: "12px"}}>
+           <div style={{
+          display: "flex"
+          }} ><input 
+          style={{
+            marginTop: "3px" ,
+            marginRight: "5px" 
+          }}
+          type="checkbox" />
+          <p>signed me log in</p></div>
+          <a>Forgot Password</a></label>
+          <button className="btn btn-success ">Log In</button>
+        </Paper>
                 </Box>:<Box sx={{
         position: "absolute",
         top: "12%",
         margin: "20px",
         display: "flex",
-        left: "0"
+        left: "0",
       }} className='card_map'>
-        <div style={{
+        <Paper style={{
           display: "flex",
           alignItem: "center",
           textAlignment: "center",
-          justifyContent: "space-evenly"
+          justifyContent: "space-evenly",
+          minWidth :"150%"
         }} className="slider_box1 " >
-          <h3>Login here</h3>
-          <label> Username  <Input type="name" style={{color: "white"}} /></label>
-          <label> Password  <Input type="name" style={{color: "white"}} /></label>
-        </div>
-        <div className={state ? "slider_box21 " : "slider_box2 "}>
-          {/* <h1>Log In ...</h1> */}
-          {state ? (<div><button
-            style={{
-              borderRadius: "70% 20% 70% 20px",
-              minHeight: "100px",
-              minWidth: "100px",
-              border: "none",
-              zIndex: "1"
-            }}
-
-            className="button_map text-white"
-            onClick={() => setState(!state)}>Left</button></div>)
-            : <div><button
-              style={{
-                borderRadius: "20% 70% 20% 70px",
-                minHeight: "100px",
-                minWidth: "100px",
-                border: "none",
-                zIndex: "1"
-              }}
-              className="button_map text-white"
-              onClick={() => setState(!state)}>Right</button></div>}
-        </div></Box>;}}
-    </Media>  
+          <h3 className="text-center ">Welcome Back!</h3>
+          <h5>Login here</h5>
+          <label style={{display: "flex", justifyContent: "space-between", maxWidth: "100%"}}> Username  <input type="name" style={{
+          maxWidth: "60%",
+          marginLeft: "5%"
+          }}/></label>
+          <label style={{display: "flex", justifyContent: "space-between", maxWidth: "100%"}}> Password  <input type="name" style={{
+          maxWidth: "60%",
+          marginLeft: "5%"
+          }}/></label>
+         <label style={{display: "flex", justifyContent: "space-between", maxWidth: "100%", fontSize: "14px"}}>
+           <div style={{
+          display: "flex"
+          }} ><input 
+          style={{
+            marginTop: "6px" ,
+            marginRight: "6px" ,
+          }}
+          type="checkbox" />
+          <p>signed me log in</p></div>
+          <a>Forgot Password</a></label>
+          <button className="btn btn-success ">Log In</button>
+        </Paper></Box>
+        ;}}</Media>
+    </div>
       </>
     )      
 }

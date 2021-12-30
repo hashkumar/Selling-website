@@ -1,22 +1,16 @@
 import React, { useState } from 'react';
 import { styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
-import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
-import CardActions from '@mui/material/CardActions';
-import Collapse from '@mui/material/Collapse';
-import Avatar from '@mui/material/Avatar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import { purple } from '@mui/material/colors';
+import Media from "react-media";
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
-import image4 from "../images/3.webp";
-import { NavLink } from "react-router-dom";
 import AOS from 'aos';
+import { IconButton } from '@mui/material';
+import { Typography } from '@mui/material';
+import { NavLink } from "react-router-dom";
+import image4 from "../images/3.webp";
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
 AOS.init();
@@ -124,7 +118,9 @@ function Cards() {
                         </Typography>
 
                         <NavLink to="/Selling-website/Watch">
-                          <button className="btn btn-gradient btn-primary" style={{ margin: "10px 0px", width: "50%" , position: "relative", right: "-50%" }}>Watch Now!</button>
+                        <Media query="(max-width: 700px)">
+        {matches => {
+          return matches ? <button className="btn btn-gradient btn-primary" style={{ margin: "10px 0px", width: "100%"}}>Watch Now!</button> : <button className="btn btn-gradient btn-primary" style={{ margin: "10px 0px", width: "50%" , position: "relative", right: "-50%" }}>Watch Now!</button>}}</Media>
                         </NavLink>
                       </CardContent>
 
@@ -175,7 +171,9 @@ function Cards() {
                         </Typography>
 
                         <NavLink to="/Selling-website/Watch">
-                          <button className="btn btn-gradient btn-primary" style={{ margin: "10px 0px", width: "50%", position: "relative", right: "-50%"}}>Watch Now!</button>
+                        <Media query="(max-width: 700px)">
+        {matches => {
+          return matches ?  <button className="btn btn-gradient btn-primary" style={{ margin: "10px 0px", width: "100%"}}>Watch Now!</button> : <button className="btn btn-gradient btn-primary" style={{ margin: "10px 0px", width: "50%" , position: "relative", right: "-50%" }}>Watch Now!</button>}}</Media>
                         </NavLink>
                       </CardContent>
 

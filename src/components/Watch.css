@@ -17,6 +17,7 @@
     margin:50px auto;
 }
 
+
 @media only screen and (max-width: 755px){
   
     .figure{
@@ -25,4 +26,5 @@
         flex-direction: column;
         margin:50px auto;
     }
+
 }
